@@ -1,0 +1,51 @@
+{
+  "name": "stelace-search-filter-dsl-parser",
+  "version": "0.1.0",
+  "description": "Stelace API server plugin implementing search filter DSL for advanced searches",
+  "license": "GPL-3.0",
+  "private": true,
+  "main": "index.js",
+  "author": "Stelace (https://stelace.com)",
+  "scripts": {
+    "test": "npm explore stelace-server -- yarn test:server",
+    "test:server": "NODE_ENV=test ava --c $(node -p 'Math.max(os.cpus().length - 1, 1)')",
+    "test:ci": "NODE_ENV=test ava --c 1 --tap | tap-xunit",
+    "test:ci:server": "npm explore stelace-server -- yarn test:ci:server",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "lodash": "4.17.15",
+    "pegjs": "0.10.0"
+  },
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "commander": "^3.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": ">=3",
+    "lint-staged": ">=9",
+    "sql-fixtures": "^1.0.0",
+    "stelace-server": "git+ssh://git@github.com/stelace/stelace-core.git#refactor-open-source",
+    "supertest": "^4.0.2",
+    "tap-xunit": "^2.4.1"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}

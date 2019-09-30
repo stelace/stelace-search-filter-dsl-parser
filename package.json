@@ -1,6 +1,6 @@
 {
   "name": "stelace-search-filter-dsl-parser",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Stelace API server plugin implementing search filter DSL for advanced searches",
   "license": "GPL-3.0",
   "private": true,

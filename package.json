@@ -30,7 +30,7 @@
     "husky": ">=3",
     "lint-staged": ">=9",
     "sql-fixtures": "^1.0.0",
-    "stelace-server": "git+https://b71dcbd53b77c004207762d7048771e294e653cc@github.com/stelace/stelace-core.git#refactor-open-source",
+    "stelace-server": "git+ssh://git@github.com/stelace/stelace-core.git#refactor-open-source",
     "supertest": "^4.0.2",
     "tap-xunit": "^2.4.1"
   },

@@ -2,7 +2,7 @@
 
 This [Stelace API server](//github.com/stelace/stelace) plugin enables [advanced filtering in Search API (docs)](//stelace.com/docs/search/#filtering), using a dedicated Domain-Specific Language parsed with PEG.js.
 
-[![CircleCI](https://circleci.com/gh/stelace/stelace-search-filter-dsl-parser.svg?style=shield&circle-token=225eee24fa294266d7205a8999567aa28f714496)](https://circleci.com/gh/stelace/stelace-search-filter-dsl-parser)
+[![CircleCI](https://circleci.com/gh/stelace/stelace-search-filter-dsl-parser.svg?style=svg&circle-token=225eee24fa294266d7205a8999567aa28f714496)](https://circleci.com/gh/stelace/stelace-search-filter-dsl-parser)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 

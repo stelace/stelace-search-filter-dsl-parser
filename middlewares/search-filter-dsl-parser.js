@@ -49,12 +49,15 @@ function getFilterDSLMiddleware () {
 
 async function parse (req) {
   const { body, platformId, env } = req
-  const { communication, createError } = deps
+  const { communication, createError, apm } = deps
   if (_.isEmpty(body) || !communication) return ''
 
   const { filter } = body
   const { stelaceApiRequest } = communication
   if (!filter) return ''
+
+  let apmSpan
+  if (apm.currentTransaction) apmSpan = apm.startSpan('Parsing Search filter DSL')
 
   try {
     const { results: customAttributes } = await stelaceApiRequest('/custom-attributes', {
@@ -125,6 +128,8 @@ async function parse (req) {
         public: { filter }
       })
     }
+  } finally {
+    if (apmSpan) apmSpan.end()
   }
 }
 

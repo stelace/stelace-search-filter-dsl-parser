@@ -838,9 +838,9 @@ aws-param-store@^2.0.0:
   integrity sha512-solSfU/ZpMX+9YN/Yc85MPl292EEDrHrHpRwhj5JB9vuuqHVFEcqethkVvi9TEOn7Y5vs4YHrnNkliRzmLPRZg==
 
 aws-sdk@^2.255.1:
-  version "2.542.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.542.0.tgz#aac9b58aade3ef9396eee01d7faca6d567ba26d6"
-  integrity sha512-d/ssYomgCSeZeNKKwaaWu0q2GOu9I+0DQzgh8cRCGGGMaDwZoHQP4FqFtBZV14avWN45QT3b+2TH7UJgKLfbAQ==
+  version "2.543.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.543.0.tgz#08b69a6fab9b3ab08e329888d06a8c4ee583f26d"
+  integrity sha512-ABHsA4W7LLYnTBCgtbTt0NF7+66nMCtdcJuAn30+RGzF0bOw3lCguqzootFrMlIOXklddQFJ9kKTXd+p/+uCVQ==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -1597,6 +1597,13 @@ cron@^1.6.0:
   dependencies:
     moment-timezone "^0.5.x"
 
+cross-env@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-6.0.3.tgz#4256b71e49b3a40637a0ce70768a6ef5c72ae941"
+  integrity sha512-+KqxF6LCvfhWvADcDPqo64yVIB31gv/jQulX2NGzKS/g3GEVz6/pt4wjHFtFWsHMddebWD/sDthJemzM4MaAag==
+  dependencies:
+    cross-spawn "^7.0.0"
+
 cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -1614,6 +1621,15 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     nice-try "^1.0.4"
     path-key "^2.0.1"
     semver "^5.5.0"
+    shebang-command "^1.2.0"
+    which "^1.2.9"
+
+cross-spawn@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.0.tgz#21ef9470443262f33dba80b2705a91db959b2e03"
+  integrity sha512-6U/8SMK2FBNnB21oQ4+6Nsodxanw1gTkntYA2zBdkFYFu3ZDx65P2ONEXGSvob/QS6REjVHQ9zxzdOafwFdstw==
+  dependencies:
+    path-key "^3.1.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
 
@@ -2241,6 +2257,11 @@ es6-error@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/es6-error/-/es6-error-4.1.1.tgz#9e3af407459deed47e9a91f9b885a84eb05c561d"
   integrity sha512-Um/+FxMr9CISWh0bi5Zv0iOD+4cFh5qLeks1qhAopKVAJw3drgKbKySikp7wGhDL0HPeaja0P5ULZrxLkniUVg==
+
+es6-object-assign@^1.0.3:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/es6-object-assign/-/es6-object-assign-1.1.0.tgz#c2c3582656247c39ea107cb1e6652b6f9f24523c"
+  integrity sha1-wsNYJlYkfDnqEHyx5mUrb58kUjw=
 
 escape-regexp-component@^1.0.2:
   version "1.0.2"
@@ -2928,7 +2949,7 @@ glob@^6.0.1:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.3, glob@^7.1.2, glob@^7.1.3:
+glob@^7.0.0, glob@^7.0.3, glob@^7.1.2, glob@^7.1.3:
   version "7.1.4"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.4.tgz#aa608a2f6c577ad357e1ae5a5c26d9a8d1969255"
   integrity sha512-hkLPepehmnKk41pUGm3sYxoFs/umurYfYJCerbXEyFIWcAzvpipAgVkBqqT9RBKMGjnq6kMuyYwha6csxbiM1A==
@@ -3374,7 +3395,7 @@ interpret@^0.6.5:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-0.6.6.tgz#fecd7a18e7ce5ca6abfb953e1f86213a49f1625b"
   integrity sha1-/s16GOfOXKar+5U+H4YhOknxYls=
 
-interpret@^1.1.0:
+interpret@^1.0.0, interpret@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.2.0.tgz#d5061a6224be58e8083985f5014d844359576296"
   integrity sha512-mT34yGKMNceBQUoVn7iCDKDntA7SC6gycMAWzGx1z/CMCTV7b2AAtXlo3nRyHZ1FelRkQbQjprHSYGwzLtkVbw==
@@ -5287,7 +5308,7 @@ path-key@^2.0.0, path-key@^2.0.1:
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-2.0.1.tgz#411cadb574c5a140d3a4b1910d40d80cc9f40b40"
   integrity sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
 
-path-key@^3.0.0:
+path-key@^3.0.0, path-key@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-3.1.0.tgz#99a10d870a803bdd5ee6f0470e58dfcd2f9a54d3"
   integrity sha512-8cChqz0RP6SHJkMt48FW0A7+qUOn+OsnOsVtzI59tZ8m+5bCSk7hzwET0pulwOM2YMn9J1efb07KB9l9f30SGg==
@@ -6175,6 +6196,24 @@ shebang-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
+shelljs@^0.8.1:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.8.3.tgz#a7f3319520ebf09ee81275b2368adb286659b097"
+  integrity sha512-fc0BKlAWiLpwZljmOvAOTE/gXawtCoNrP5oaY7KIaQbbyHeQVg01pSEuEGvGh3HEdBU4baCD7wQBwADmM/7f7A==
+  dependencies:
+    glob "^7.0.0"
+    interpret "^1.0.0"
+    rechoir "^0.6.2"
+
+shx@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/shx/-/shx-0.3.2.tgz#40501ce14eb5e0cbcac7ddbd4b325563aad8c123"
+  integrity sha512-aS0mWtW3T2sHAenrSrip2XGv39O9dXIFUqxAEWHEOS1ePtGIBavdPJY1kE2IHl14V/4iCbUiNDPGdyYTtmhSoA==
+  dependencies:
+    es6-object-assign "^1.0.3"
+    minimist "^1.2.0"
+    shelljs "^0.8.1"
+
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
@@ -6514,7 +6553,7 @@ static-extend@^0.1.1:
 
 "stelace-server@git+ssh://git@github.com/stelace/stelace-core.git#dev":
   version "4.6.2"
-  resolved "git+ssh://git@github.com/stelace/stelace-core.git#b9749f1a96a97a8f6820066c49dd59c26c5fcec9"
+  resolved "git+ssh://git@github.com/stelace/stelace-core.git#770f04473d5d143247b752db38ec4a65fe59c2f7"
   dependencies:
     "@hapi/joi" "git://github.com/hapijs/joi.git#v16.0.0-rc1"
     "@panva/jose" "^1.6.1"

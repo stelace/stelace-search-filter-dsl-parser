@@ -7,9 +7,9 @@
   "main": "index.js",
   "author": "Stelace (https://stelace.com)",
   "scripts": {
-    "test": "npm explore stelace-server -- yarn test:server",
-    "test:server": "NODE_ENV=test ava --c $(node -p 'Math.max(os.cpus().length - 1, 1)')",
+    "test": "NODE_ENV=test ava --c $(node -p 'Math.max(os.cpus().length - 1, 1)')",
     "test:ci": "NODE_ENV=test ava --c 1 --tap | tap-xunit",
+    "test:server": "npm explore stelace-server -- yarn test:server",
     "test:ci:server": "npm explore stelace-server -- yarn test:ci:server",
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."

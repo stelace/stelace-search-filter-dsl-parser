@@ -56,15 +56,18 @@ async function parse (req) {
   const { stelaceApiRequest } = communication
   if (!filter) return ''
 
-  let apmSpan
-  if (apm.currentTransaction) apmSpan = apm.startSpan('Parsing Search filter DSL')
+  let apmSpans = {}
+  let m = apm && apm.currentTransaction
+  if (m) apmSpans.middleware = apm.startSpan('Parsing Search filter DSL')
 
   try {
+    if (m) apmSpans.customAttributes = apm.startSpan('Fetch Custom Attributes before parsing')
     const { results: customAttributes } = await stelaceApiRequest('/custom-attributes', {
       leafThroughResults: 10000,
       platformId,
       env
     })
+    if (apmSpans.customAttributes) apmSpans.customAttributes.end()
     debug('Parsing filter DSL %s', filter)
 
     let getParsingContext = () => {
@@ -106,7 +109,9 @@ async function parse (req) {
       }
     }
 
+    if (m) apmSpans.peg = apm.startSpan('PEG.js parsing')
     const parsedFilter = searchFilterDSLParser.parse(filter.trim(), getParsingContext())
+    if (apmSpans.peg) apmSpans.peg.end()
 
     debug('Filter DSL parsing done')
 
@@ -129,7 +134,7 @@ async function parse (req) {
       })
     }
   } finally {
-    if (apmSpan) apmSpan.end()
+    if (apmSpans.middleware) apmSpans.middleware.end()
   }
 }
 

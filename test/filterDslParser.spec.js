@@ -2,6 +2,11 @@ require('dotenv').config()
 
 const test = require('ava')
 const request = require('supertest')
+const path = require('path')
+
+// Loading current plugin manually _before_ loading server to run tests
+const { loadPlugin } = require('stelace-server/plugins')
+loadPlugin(path.resolve(__dirname, '..'))
 
 const {
   testTools: {

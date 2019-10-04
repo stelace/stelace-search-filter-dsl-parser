@@ -6514,7 +6514,7 @@ static-extend@^0.1.1:
 
 "stelace-server@git+ssh://git@github.com/stelace/stelace-core.git#dev":
   version "4.6.2"
-  resolved "git+ssh://git@github.com/stelace/stelace-core.git#b545366986c8dfd5e8b91c36db5cb9c97510eb79"
+  resolved "git+ssh://git@github.com/stelace/stelace-core.git#b9749f1a96a97a8f6820066c49dd59c26c5fcec9"
   dependencies:
     "@hapi/joi" "git://github.com/hapijs/joi.git#v16.0.0-rc1"
     "@panva/jose" "^1.6.1"

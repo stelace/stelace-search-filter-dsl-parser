@@ -31,7 +31,7 @@
     "husky": ">=4",
     "lint-staged": ">=9",
     "shx": "^0.3.2",
-    "sql-fixtures": "^1.0.0",
+    "sql-fixtures": "^1.0.1",
     "stelace-server": "git+ssh://git@github.com/stelace/stelace.git#dev",
     "supertest": "^4.0.2",
     "tap-xunit": "^2.4.1"

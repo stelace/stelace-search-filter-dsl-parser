@@ -51,7 +51,7 @@ test.before(async (t) => {
     .send({
       name: 'Saved search with filter DSL',
       // match assets 6 and 8
-      filter: `options["sunroof", "gps", "convertible"]`,
+      filter: 'options["sunroof", "gps", "convertible"]',
       createdBefore: computeDate(initNow, '1h'),
       createdAfter: computeDate(initNow, '-1h'),
       save: true
@@ -310,7 +310,7 @@ test('[DSL] returns assets with queried custom attributes (strict equality)', as
     .post('/search')
     .set(authorizationHeaders)
     .send({
-      filter: `automaticTransmission == false`
+      filter: 'automaticTransmission == false'
     })
     .expect(200)
 
@@ -908,7 +908,7 @@ test('[DSL-only] doesn’t return assets that match select filter if requiring m
     .post('/search')
     .set(authorizationHeaders)
     .send({
-      filter: `make[Toyota, 'Chevrolet', BMW] == 2`
+      filter: 'make[Toyota, \'Chevrolet\', BMW] == 2'
       // make is a select customAttribute so there can’t be 2 matches
       // And implicit fallbacks could be confusing <= Explicit is better than implicit
     })
@@ -921,7 +921,7 @@ test('[DSL-only] doesn’t return assets that match select filter if requiring m
     .post('/search')
     .set(authorizationHeaders)
     .send({
-      filter: `make[Toyota, 'Chevrolet', BMW] == 1`
+      filter: 'make[Toyota, \'Chevrolet\', BMW] == 1'
       // '== 1 can be omitted' as it’s default for both select and tags (OR)
     })
     .expect(200)

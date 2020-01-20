@@ -56,8 +56,8 @@ async function parse (req) {
   const { stelaceApiRequest } = communication
   if (!filter) return ''
 
-  let apmSpans = {}
-  let m = apm && apm.currentTransaction
+  const apmSpans = {}
+  const m = apm && apm.currentTransaction
   if (m) apmSpans.middleware = apm.startSpan('Parsing Search filter DSL')
 
   try {
@@ -70,7 +70,7 @@ async function parse (req) {
     if (apmSpans.customAttributes) apmSpans.customAttributes.end()
     debug('Parsing filter DSL %s', filter)
 
-    let getParsingContext = () => {
+    const getParsingContext = () => {
       const booleanBuiltIns = ['validated', 'active']
       const numberBuiltIns = ['price']
       const selectBuiltIns = ['id', 'categoryId', 'assetTypeId', 'ownerId']

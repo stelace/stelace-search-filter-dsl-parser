@@ -5952,7 +5952,8 @@ statuses@~1.4.0:
 
 "stelace-server@https://github.com/stelace/stelace.git#dev":
   version "1.0.0-beta.3"
-  resolved "https://github.com/stelace/stelace.git#f86846416b9e6ae2519e20dc1588517b44007b9a"
+  uid "8d2258859e52becc5b8524f7af52ee3f6e2441fc"
+  resolved "https://github.com/stelace/stelace.git#8d2258859e52becc5b8524f7af52ee3f6e2441fc"
   dependencies:
     "@hapi/bourne" "^2.0.0"
     "@hapi/joi" "^17.1.0"

@@ -6205,9 +6205,9 @@ stealthy-require@^1.1.1:
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-"stelace-server@https://github.com/stelace/stelace.git#test/elasticsearch-ready":
+"stelace-server@https://github.com/stelace/stelace.git#dev":
   version "1.0.0-beta.7"
-  resolved "https://github.com/stelace/stelace.git#277e391e4a2b33b22a482b7d1419b29c9d9766a9"
+  resolved "https://github.com/stelace/stelace.git#a3936f18014baada7311e69bf180fa94a67d054b"
   dependencies:
     "@elastic/elasticsearch" "^7.6.1"
     "@hapi/bourne" "^2.0.0"

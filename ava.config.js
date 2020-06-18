@@ -4,5 +4,5 @@ export default () => ({
   ],
   serial: false,
   cache: false,
-  timeout: '30s'
+  timeout: '15s'
 })

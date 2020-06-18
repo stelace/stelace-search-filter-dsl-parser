@@ -35,7 +35,7 @@ const {
 
 test.before(async (t) => {
   await before({ name: 'filterParser' })(t)
-  await new Promise(resolve => setTimeout(resolve, 20000))
+  // await new Promise(resolve => setTimeout(resolve, 20000))
   await isElasticsearchReady({
     platformId: t.context.platformId,
     env: t.context.env,

@@ -21,7 +21,7 @@ const {
 
 const { before, beforeEach, after } = lifecycle
 const { getAccessTokenHeaders } = auth
-const { initElasticsearch, fixturesParams } = searchFixtures
+const { initElasticsearch, fixturesParams, isElasticsearchReady } = searchFixtures
 
 let initNow
 const savedSearchIds = {}
@@ -36,6 +36,10 @@ const {
 test.before(async (t) => {
   await before({ name: 'filterParser' })(t)
   await new Promise(resolve => setTimeout(resolve, 20000))
+  await isElasticsearchReady({
+    platformId: t.context.platformId,
+    env: t.context.env,
+  })
   await beforeEach()(t)
 
   initNow = await initElasticsearch({ t })

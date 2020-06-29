@@ -1476,7 +1476,7 @@ debug@*, debug@4.1.1, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@~4.1.0:
   dependencies:
     ms "^2.1.1"
 
-debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9, debug@~2.6.8:
+debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -4619,10 +4619,10 @@ opencollective-postinstall@^2.0.2:
   resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.2.tgz#5657f1bede69b6e33a45939b061eb53d3c6c3a89"
   integrity sha512-pVOEP16TrAO2/fjej1IdOyupJY8KDUM1CvsaScRbw6oddvpQoOfGk4ywha0HKKVAD6RkW4x6Q+tNBwhf3Bgpuw==
 
-openid-client@3.15.2:
-  version "3.15.2"
-  resolved "https://registry.yarnpkg.com/openid-client/-/openid-client-3.15.2.tgz#d48a6d7991d5d6117f4598bb1d19399262164128"
-  integrity sha512-50aBsfiSZds48ec/VvUZ3hwtpEW0L5s7gGxlsJSvo5mAeK4TG3gv0VRWI+SvCAae4MEwRegLJD3YjpkJMLi2GQ==
+openid-client@3.15.3:
+  version "3.15.3"
+  resolved "https://registry.yarnpkg.com/openid-client/-/openid-client-3.15.3.tgz#4dd88dcc989a524f2037f806007f70b6f3da8463"
+  integrity sha512-KCwr4CgRWcw7BRuZHGdZ3vuqt2oRQ1WbQfcwvxnLBwcyqOXB+QljNiiB9m3hIzlarVKKIIVpFukOZo583kuzTA==
   dependencies:
     "@types/got" "^9.6.9"
     base64url "^3.0.1"
@@ -6000,12 +6000,12 @@ socket.io-parser@~3.4.0:
     debug "~4.1.0"
     isarray "2.0.1"
 
-socket.io-redis@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/socket.io-redis/-/socket.io-redis-5.2.0.tgz#8fe2ad9445fc50886fb70abc759d67403d5899df"
-  integrity sha1-j+KtlEX8UIhvtwq8dZ1nQD1Ymd8=
+socket.io-redis@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/socket.io-redis/-/socket.io-redis-5.3.0.tgz#d01716d2813c25b76918cd704e1cf540b2f3985a"
+  integrity sha512-w2EqyGdw3oXzd1MY4sVIg2rYVooDI5sSwel8DOt38sTgaJuuXQSC847x38FvLSn2Rt6MAcdLhiNw/FqjzeC4RQ==
   dependencies:
-    debug "~2.6.8"
+    debug "~4.1.0"
     notepack.io "~2.1.2"
     redis "~2.8.0"
     socket.io-adapter "~1.1.0"
@@ -6207,7 +6207,8 @@ stealthy-require@^1.1.1:
 
 "stelace-server@https://github.com/stelace/stelace.git#dev":
   version "1.0.0-beta.7"
-  resolved "https://github.com/stelace/stelace.git#a3936f18014baada7311e69bf180fa94a67d054b"
+  uid ed1ff55509ba0a25130057253c492c1020f92baf
+  resolved "https://github.com/stelace/stelace.git#ed1ff55509ba0a25130057253c492c1020f92baf"
   dependencies:
     "@elastic/elasticsearch" "^7.6.1"
     "@hapi/bourne" "^2.0.0"
@@ -6240,7 +6241,7 @@ stealthy-require@^1.1.1:
     nodemailer "^6.4.8"
     objection "https://github.com/stelace/objection.js.git#stelace"
     objection-db-errors "^1.1.2"
-    openid-client "3.15.2"
+    openid-client "3.15.3"
     parse-github-url "^1.0.2"
     path-to-regexp "^6.1.0"
     pegjs "0.10.0"
@@ -6253,7 +6254,7 @@ stealthy-require@^1.1.1:
     serialize-error "^6.0.0"
     sinon "^9.0.2"
     socket.io "^2.3.0"
-    socket.io-redis "^5.2.0"
+    socket.io-redis "^5.3.0"
     stelace-util-keys "https://github.com/stelace/stelace-util-keys.git#3.0.1"
     superagent "~5.2.2"
     useragent "^2.3.0"

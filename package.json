@@ -12,7 +12,8 @@
     "test:server": "cross-env STELACE_PLUGINS_PATHS=$(shx pwd) npm explore stelace-server -- yarn test:server",
     "test:ci:server": "cross-env STELACE_PLUGINS_PATHS=$(shx pwd) npm explore stelace-server -- yarn test:ci:server",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "plugins:server": "shx cp .env ./node_modules/stelace-server/.env && cross-env STELACE_PLUGINS_PATHS=$(shx pwd) npm explore stelace-server -- yarn plugins"
   },
   "dependencies": {
     "lodash": "^4.17.15",

@@ -6,9 +6,40 @@ This [Stelace API server](//github.com/stelace/stelace) plugin enables [advanced
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-yellow.svg)](https://standardjs.com)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
+> For instructions about using and developing Stelace plugins, have a look at [server docs](https://github.com/stelace/stelace/blob/dev/docs/plugins.md).
+
+## Tests and development
+
+Install plugin dependencies:
+
+```sh
+yarn
+```
+
+Databases should be up and running. You can use stelace-server installed as a dependency for tests and development:
+
+```sh
+# not needed if you’re already running stelace-server databases
+yarn --cwd node_modules/stelace-server/ run docker:db
+```
+
+Please also ensure that additional stelace-server plugins specified in the server environment variable `INSTALLED_PLUGINS` are installed:
+
+```sh
+yarn plugins:server
+```
+
+### Run tests
+
+```sh
+yarn test
+```
+
+Run plugin tests _and_ all server tests with `yarn test:server`.
+
 ## License
 
-Stelace Copyright © 2018-present Sharinplace SAS.
+© Stelace 2019-present
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

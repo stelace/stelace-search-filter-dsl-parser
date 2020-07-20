@@ -59,10 +59,10 @@
     redis "^2.7.1"
     uuid "^3.3.2"
 
-"@elastic/elasticsearch@^7.6.1":
-  version "7.7.1"
-  resolved "https://registry.yarnpkg.com/@elastic/elasticsearch/-/elasticsearch-7.7.1.tgz#ad95145fcd779206d101560cb90cdeb3041d2984"
-  integrity sha512-OzCitXAMQ4pC6EwtPCO0KBygjDFcBMBrJ6pBguYuZxtMbRLOPjcS1Er31N0+J6mp2Q8pU0HGm1FAGfGe6FJReQ==
+"@elastic/elasticsearch@^7.8.0":
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/@elastic/elasticsearch/-/elasticsearch-7.8.0.tgz#3f9ee54fe8ef79874ebd231db03825fa500a7111"
+  integrity sha512-rUOTNN1At0KoN0Fcjd6+J7efghuURnoMTB/od9EMK6Mcdebi6N3z5ulShTsKRn6OanS9Eq3l/OmheQY1Y+WLcg==
   dependencies:
     debug "^4.1.1"
     decompress-response "^4.2.0"
@@ -694,10 +694,10 @@ aws-param-store@^3.2.0:
   resolved "https://registry.yarnpkg.com/aws-param-store/-/aws-param-store-3.2.0.tgz#93fa7a2e5bf7a759692b765fdd0320d51cb8e4f6"
   integrity sha512-+SV2355LQy6aLzoepp78ha7JyVo1e01C40ZCrGQUqX0VCb9SeXNi+6xOKR+i6NivtgYukLHOnFieBKoxbid4wg==
 
-aws-sdk@^2.709.0:
-  version "2.713.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.713.0.tgz#e87404ddcba093d36afafb48f119ec66f654a83f"
-  integrity sha512-axR1eOVn134KXJc1IT+Au2TXcK6oswY+4nvGe5GfU3pXeehhe0xNeP9Bw9yF36TRBxuvu4IJ2hRHDKma05smgA==
+aws-sdk@^2.713.0:
+  version "2.715.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.715.0.tgz#b890892098e0a4d9e7189ed341267d4a9a6e856b"
+  integrity sha512-O6ytb66IXFCowp0Ng2bSPM6v/cZVOhjJWFTR1CG4ieG4IroAaVgB3YQKkfPKA0Cy9B/Ovlsm7B737iuroKsd0w==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3558,10 +3558,10 @@ jmespath@0.15.0:
   resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
   integrity sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
 
-jose@^1.27.1:
-  version "1.27.1"
-  resolved "https://registry.yarnpkg.com/jose/-/jose-1.27.1.tgz#a1de2ecb5b3ae1ae28f0d9d0cc536349ada27ec8"
-  integrity sha512-VyHM6IJPw0TTGqHVNlPWg16/ASDPAmcChcLqSb3WNBvwWFoWPeFqlmAUCm8/oIG1GjZwAlUDuRKFfycowarcVA==
+jose@^1.27.1, jose@^1.27.2:
+  version "1.27.2"
+  resolved "https://registry.yarnpkg.com/jose/-/jose-1.27.2.tgz#060c6cddf17e90eaa6316b926860b12ab76580fc"
+  integrity sha512-zLIwnMa8dh5A2jFo56KvhiXCaW0hFjdNvG0I5GScL8Wro+/r/SnyIYTbnX3fYztPNSfgQp56sDMHUuS9c3e6bw==
   dependencies:
     "@panva/asn1.js" "^1.0.0"
 
@@ -3908,12 +3908,7 @@ lodash.once@^4.0.0:
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
   integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
-lodash@4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
-
-lodash@^4.0.0, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19:
+lodash@4.17.19, lodash@^4.0.0, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19:
   version "4.17.19"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
@@ -4654,10 +4649,10 @@ opencollective-postinstall@^2.0.2:
   resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.2.tgz#5657f1bede69b6e33a45939b061eb53d3c6c3a89"
   integrity sha512-pVOEP16TrAO2/fjej1IdOyupJY8KDUM1CvsaScRbw6oddvpQoOfGk4ywha0HKKVAD6RkW4x6Q+tNBwhf3Bgpuw==
 
-openid-client@3.15.5:
-  version "3.15.5"
-  resolved "https://registry.yarnpkg.com/openid-client/-/openid-client-3.15.5.tgz#95ad07227b12e210fb21fbe81d5843c0bdaba3ae"
-  integrity sha512-UR+YfxyUrltY3Qqksg/UPU5dz6Nb5MQzBrARtg8+ZU3C1wib7/W1mmhMQS0fRpSmMs01CNhZMpM0oA8njIcn5g==
+openid-client@3.15.6:
+  version "3.15.6"
+  resolved "https://registry.yarnpkg.com/openid-client/-/openid-client-3.15.6.tgz#341c9f72592169a980666f7d9fe7255ba9daeb13"
+  integrity sha512-DDLaq2vXYzvRtI+5t2AugxD1m26lW1ei2nhkcmMAJMC/5kUNLMWObXKBvCsbNWwywHsQntoh9DES0vUWzvCcDQ==
   dependencies:
     "@types/got" "^9.6.9"
     base64url "^3.0.1"
@@ -6255,14 +6250,14 @@ stealthy-require@^1.1.1:
 
 "stelace-server@https://github.com/stelace/stelace.git#dev":
   version "1.0.0-beta.8"
-  uid "60bfbf07122a11c79e93249d351a62101cda25ef"
-  resolved "https://github.com/stelace/stelace.git#60bfbf07122a11c79e93249d351a62101cda25ef"
+  uid "0aa12cc5066778bbd6cc893d9b8da497ce134451"
+  resolved "https://github.com/stelace/stelace.git#0aa12cc5066778bbd6cc893d9b8da497ce134451"
   dependencies:
-    "@elastic/elasticsearch" "^7.6.1"
+    "@elastic/elasticsearch" "^7.8.0"
     "@hapi/bourne" "^2.0.0"
     "@hapi/joi" "^17.1.1"
     aws-param-store "^3.2.0"
-    aws-sdk "^2.709.0"
+    aws-sdk "^2.713.0"
     bcrypt "^5.0.0"
     bluebird "^3.7.2"
     cheerio "^1.0.0-rc.3"
@@ -6277,10 +6272,10 @@ stealthy-require@^1.1.1:
     intl "^1.2.5"
     intl-format-cache "^4.2.46"
     intl-messageformat "^4.4.0"
-    jose "^1.27.1"
+    jose "^1.27.2"
     jsonwebtoken "^8.5.1"
     knex "^0.21.1"
-    lodash "4.17.15"
+    lodash "4.17.19"
     mobitel-iso-4217-currencies "^1.1.1"
     moment "^2.27.0"
     moment-timezone "^0.5.31"
@@ -6289,7 +6284,7 @@ stealthy-require@^1.1.1:
     nodemailer "^6.4.10"
     objection "https://github.com/stelace/objection.js.git#stelace"
     objection-db-errors "^1.1.2"
-    openid-client "3.15.5"
+    openid-client "3.15.6"
     parse-github-url "^1.0.2"
     path-to-regexp "^6.1.0"
     pegjs "0.10.0"

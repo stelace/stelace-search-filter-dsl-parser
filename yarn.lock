@@ -686,10 +686,10 @@ aws-param-store@^3.2.0:
   resolved "https://registry.yarnpkg.com/aws-param-store/-/aws-param-store-3.2.0.tgz#93fa7a2e5bf7a759692b765fdd0320d51cb8e4f6"
   integrity sha512-+SV2355LQy6aLzoepp78ha7JyVo1e01C40ZCrGQUqX0VCb9SeXNi+6xOKR+i6NivtgYukLHOnFieBKoxbid4wg==
 
-aws-sdk@^2.720.0:
-  version "2.725.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.725.0.tgz#287ef3b55aa66f10c88671ec62300e96015aaf6a"
-  integrity sha512-Qd/MlxfQC9NpTxFUQ7u2BdsjiwNtbn5oVp04NPfXEc0xyT216TtcIs+jNyiJ9WaH7AgkHouU1BbBcReO8byYzg==
+aws-sdk@^2.725.0:
+  version "2.729.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.729.0.tgz#3d850f7825b94b5d8b2aca58ec096973bc4c7e34"
+  integrity sha512-x5q/+9wM37tBYCmYNGMj+aU9qeXqhbUH0Dz3wlSpAW55+N4NwlBbpqhyCV3oF9bePEJtEnxLGWNXpb9BNWNhew==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -4373,10 +4373,10 @@ node-pre-gyp@0.15.0:
     semver "^5.3.0"
     tar "^4.4.2"
 
-nodemailer@^6.4.10:
-  version "6.4.10"
-  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.4.10.tgz#f4c8dc7991c57f41fd081bef224ef01f7065143d"
-  integrity sha512-j+pS9CURhPgk6r0ENr7dji+As2xZiHSvZeVnzKniLOw1eRAyM/7flP0u65tCnsapV8JFu+t0l/5VeHsCZEeh9g==
+nodemailer@^6.4.11:
+  version "6.4.11"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.4.11.tgz#1f00b4ffd106403f17c03f3d43d5945b2677046c"
+  integrity sha512-BVZBDi+aJV4O38rxsUh164Dk1NCqgh6Cm0rQSb9SK/DHGll/DrCMnycVDD7msJgZCnmVa8ASo8EZzR7jsgTukQ==
 
 nopt@^3.0.1:
   version "3.0.6"
@@ -6232,14 +6232,14 @@ stealthy-require@^1.1.1:
 
 "stelace-server@https://github.com/stelace/stelace.git#dev":
   version "1.0.0-beta.8"
-  uid "14fda2c73623374dbcdfe01cc871e54cd29281d9"
-  resolved "https://github.com/stelace/stelace.git#14fda2c73623374dbcdfe01cc871e54cd29281d9"
+  uid d998d2b4f3568ca35d4496448bcb5d91cbcbf09a
+  resolved "https://github.com/stelace/stelace.git#d998d2b4f3568ca35d4496448bcb5d91cbcbf09a"
   dependencies:
     "@elastic/elasticsearch" "^7.8.0"
     "@hapi/bourne" "^2.0.0"
     "@hapi/joi" "^17.1.1"
     aws-param-store "^3.2.0"
-    aws-sdk "^2.720.0"
+    aws-sdk "^2.725.0"
     bcrypt "^5.0.0"
     bluebird "^3.7.2"
     cheerio "^1.0.0-rc.3"
@@ -6263,7 +6263,7 @@ stealthy-require@^1.1.1:
     moment-timezone "^0.5.31"
     ms "^2.1.2"
     ngrok "^3.2.7"
-    nodemailer "^6.4.10"
+    nodemailer "^6.4.11"
     objection "https://github.com/stelace/objection.js.git#stelace"
     objection-db-errors "^1.1.2"
     openid-client "3.15.9"
@@ -6284,7 +6284,7 @@ stealthy-require@^1.1.1:
     stelace-util-keys "https://github.com/stelace/stelace-util-keys.git#3.0.1"
     superagent "~5.3.1"
     useragent "^2.3.0"
-    uuid "^8.2.0"
+    uuid "^8.3.0"
     virgen-acl "^0.0.22"
     vm2 "^3.9.2"
 
@@ -6935,10 +6935,10 @@ uuid@^7.0.3:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
   integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
 
-uuid@^8.2.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.2.0.tgz#cb10dd6b118e2dada7d0cd9730ba7417c93d920e"
-  integrity sha512-CYpGiFTUrmI6OBMkAdjSDM0k5h8SkkiTP4WAjQgDgNB1S3Ou9VBEvr6q0Kv2H1mMk7IWfxYGpMH5sd5AvcIV2Q==
+uuid@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.0.tgz#ab738085ca22dc9a8c92725e459b1d507df5d6ea"
+  integrity sha512-fX6Z5o4m6XsXBdli9g7DtWgAx+osMsRRZFKma1mIUsLCz6vRvv+pz5VNbyu9UEDzpMWulZfvpgb/cmDXVulYFQ==
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"

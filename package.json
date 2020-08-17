@@ -16,7 +16,7 @@
     "plugins:server": "shx cp .env ./node_modules/stelace-server/.env && cross-env STELACE_PLUGINS_PATHS=$(shx pwd) npm explore stelace-server -- yarn plugins"
   },
   "dependencies": {
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.20",
     "pegjs": "0.10.0"
   },
   "devDependencies": {

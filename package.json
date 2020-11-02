@@ -31,7 +31,7 @@
     "eslint-plugin-standard": "^4.0.2",
     "husky": ">=4",
     "lint-staged": ">=10",
-    "shx": "^0.3.2",
+    "shx": "^0.3.3",
     "sql-fixtures": "^1.0.4",
     "stelace-server": "https://github.com/stelace/stelace.git#dev",
     "supertest": "^4.0.2",

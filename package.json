@@ -34,7 +34,7 @@
     "shx": "^0.3.3",
     "sql-fixtures": "^1.0.4",
     "stelace-server": "https://github.com/stelace/stelace.git#dev",
-    "supertest": "^4.0.2",
+    "supertest": "^6.1.1",
     "tap-xunit": "^2.4.1"
   },
   "engines": {

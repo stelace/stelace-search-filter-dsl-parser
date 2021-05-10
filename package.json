@@ -30,7 +30,7 @@
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^4.0.2",
     "husky": ">=6",
-    "lint-staged": ">=10",
+    "lint-staged": ">=11",
     "shx": "^0.3.3",
     "sql-fixtures": "^1.0.4",
     "stelace-server": "https://github.com/stelace/stelace.git#dev",
